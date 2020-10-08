@@ -1,0 +1,13 @@
+name: 'Create .env file based on Github Secrets'
+description: 'Github Action to write Github Secrets into a .env file.'
+author: 'Olek Zaytsev'
+branding:
+  icon: 'settings'
+  color: 'yellow'
+inputs:
+  file-name:
+    description: 'The name of the file to be written'
+    required: false
+runs:
+  using: 'node12'
+  main: 'index.js'

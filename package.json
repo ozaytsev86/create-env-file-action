@@ -1,0 +1,27 @@
+{
+  "name": "create-env-file",
+  "version": "1.0.0",
+  "description": "Github Action to write Github Secrets into a .env file.",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ozaytsev86/create-env-file.git"
+  },
+  "keywords": [
+    "action",
+    "env",
+    "envfile"
+  ],
+  "author": "Olek Zaytsev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ozaytsev86/create-env-file/issues"
+  },
+  "homepage": "https://github.com/ozaytsev86/create-env-file#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.6"
+  }
+}
