@@ -1,5 +1,5 @@
 # create-env-file action
-Github Action to write Github Secrets into a .env file. The action looks for variables that start with INPUT_ENV_ and creates a .env file with them.
+Github Action to write Github Secrets into a .env file. The action looks for variables that start with ENV_ and creates a .env file with them.
 
 ## Inputs
 
@@ -33,7 +33,7 @@ jobs:
           ENV_TEST_API_KEY: ${{ secrets.TEST_API_KEY }}
           ENV_ANOTHER_KEY: ${{ secrets.ANOTHER_KEY }}
 ```
-
+**NOTE:** be sure that `ubuntu-latest` or any other image you use has node installed.
 ## Result .env
 ```text
 TEST_API_KEY: '1234test',
