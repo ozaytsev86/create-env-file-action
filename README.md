@@ -36,8 +36,8 @@ jobs:
 **NOTE:** be sure that `ubuntu-latest` or any other image you use has node installed.
 ## Result .env
 ```text
-TEST_API_KEY: '1234test',
-ANOTHER_KEY: 'Super secret'
+TEST_API_KEY=1234test
+ANOTHER_KEY=Super secret
 ```
 
 ## License
