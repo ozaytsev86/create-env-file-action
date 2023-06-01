@@ -19,13 +19,13 @@ jobs:
       - name: Create .env file
         uses: ozaytsev86/create-env-file@v1
         with:
-          REACT_APP_API_KEY: ${{ secrets.APP_API_KEY }}
-          REACT_APP_AUTH_DOMAIN: ${{ secrets.APP_AUTH_DOMAIN }}
-          REACT_APP_DATABASE_URL: ${{ secrets.APP_DATABASE_URL }}
-          REACT_APP_PROJECT_ID: ${{ secrets.APP_PROJECT_ID }}
-          REACT_APP_STORAGE_BUCKET: ${{ secrets.APP_STORAGE_BUCKET }}
-          REACT_APP_MESSAGING_SENDER_ID: ${{ secrets.APP_MESSAGING_SENDER_ID }}
-          REACT_APP_APP_ID: ${{ secrets.APP_APP_ID }}
+          INPUT_ENV_REACT_APP_API_KEY: ${{ secrets.APP_API_KEY }}
+          INPUT_ENV_REACT_APP_AUTH_DOMAIN: ${{ secrets.APP_AUTH_DOMAIN }}
+          INPUT_ENV_REACT_APP_DATABASE_URL: ${{ secrets.APP_DATABASE_URL }}
+          INPUT_ENV_REACT_APP_PROJECT_ID: ${{ secrets.APP_PROJECT_ID }}
+          INPUT_ENV_REACT_APP_STORAGE_BUCKET: ${{ secrets.APP_STORAGE_BUCKET }}
+          INPUT_ENV_REACT_APP_MESSAGING_SENDER_ID: ${{ secrets.APP_MESSAGING_SENDER_ID }}
+          INPUT_ENV_REACT_APP_APP_ID: ${{ secrets.APP_APP_ID }}
       - name: Install Dependencies
         run: npm install
       - name: Build
