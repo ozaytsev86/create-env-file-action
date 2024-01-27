@@ -4,7 +4,7 @@ Github Action to write Github Secrets into a .env file. The action looks for var
 ## Inputs
 
 ### key
-**Required** Should start with `INPUT_ENV_` prefix
+**Required** Should start with `ENV_` prefix
 
 ### value
 **Required** Should be in the format specified in Github's [documentation](https://docs.github.com/en/free-pro-team@latest/actions/reference/encrypted-secrets#using-encrypted-secrets-in-a-workflow)
@@ -30,8 +30,8 @@ jobs:
       - name: Create .env file
         uses: ozaytsev86/create-env-file@v1
         with:
-          INPUT_ENV_TEST_API_KEY: ${{ secrets.TEST_API_KEY }}
-          INPUT_ENV_ANOTHER_KEY: ${{ secrets.ANOTHER_KEY }}
+          ENV_TEST_API_KEY: ${{ secrets.TEST_API_KEY }}
+          ENV_ANOTHER_KEY: ${{ secrets.ANOTHER_KEY }}
 ```
 **NOTE:** be sure that `ubuntu-latest` or any other image you use has node installed.
 ## Result .env
