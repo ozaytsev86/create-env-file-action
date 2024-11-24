@@ -9,5 +9,5 @@ inputs:
     description: 'The name of the file to be written'
     required: false
 runs:
-  using: 'node12'
+  using: 'node20'
   main: 'index.js'

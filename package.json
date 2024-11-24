@@ -1,6 +1,6 @@
 {
   "name": "create-env-file",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Github Action to write Github Secrets into a .env file.",
   "main": "index.js",
   "directories": {
@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/ozaytsev86/create-env-file#readme",
   "dependencies": {
-    "@actions/core": "^1.2.6"
-  }
+    "@actions/core": "^1.11.1"
+  },
+  "packageManager": "npm@10.8.1+sha1.1f1cb1305cd9246b9efe07d8629874df23157a2f"
 }

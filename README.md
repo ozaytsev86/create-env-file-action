@@ -17,7 +17,25 @@ Github Action to write Github Secrets into a .env file. The action looks for var
 2. Add a key/value in `with:` section.
 3. Go to your `repository -> settings -> secrets` and add secrets you want to be written into a .env file.
 
-## Example usage
+## Example usage v2
+```yaml
+on:
+  push:
+    branches:
+      - master
+jobs: 
+  create_env_file_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create .env file
+        uses: ozaytsev86/create-env-file@v2
+        with:
+          ENV_TEST_API_KEY: ${{ secrets.TEST_API_KEY }}
+          ENV_ANOTHER_KEY: ${{ secrets.ANOTHER_KEY }}
+```
+
+In case you want to use an old version of the action, you can use the following example.
+## Example usage v1
 ```yaml
 on:
   push:
