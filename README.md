@@ -28,7 +28,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Create .env file
-        uses: ozaytsev86/create-env-file@v2
+        uses: ozaytsev86/create-env-file@v2.0.0
         with:
           ENV_TEST_API_KEY: ${{ secrets.TEST_API_KEY }}
           ENV_ANOTHER_KEY: ${{ secrets.ANOTHER_KEY }}
